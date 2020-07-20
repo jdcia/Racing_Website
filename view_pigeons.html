@@ -43,34 +43,132 @@
 
         <div class="pigeon_container">
 
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
+            </div>
 
-            </div>
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
-            
-            </div>
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
-            
-            </div>
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
-            
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
             </div>
 
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
+            </div>
 
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
             </div>
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
-            
+
+
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
             </div>
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
-            
+
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
             </div>
-            <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
-            
+
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
             </div>
+
+            <div class="pigeon_wrapper">    
+                <div class="pigeon" style="background-image:url(./images/pigeon.jpg);">
+                
+                </div>
+                <div class="text_wrapper">
+                    <div class="pigeon_description">
+                        <p1>
+                            <br>Insert Pigeon Information</br>
+                        </p1>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
     </div>
 </body>
+
+<!-- Eventually move to node.js file -->
+<script>
+    const items = document.querySelectorAll(".pigeon_wrapper");
+
+    items.forEach(x => {
+        x.addEventListener('mouseover', () =>{
+            x.childNodes[1].classList.add('darken_pigeon');
+        })
+    });
+
+    items.forEach(x => {
+        x.addEventListener('mouseout', () =>{
+            x.childNodes[1].classList.remove('darken_pigeon');
+        })
+    });
+
+</script>
 </html>
