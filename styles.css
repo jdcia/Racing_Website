@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 /*Overal Styles*/
 body {
     margin: 0px;
@@ -14,6 +16,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+
+    font-family: 'Open Sans',serif;
     
 }
 
@@ -46,27 +50,22 @@ body {
 /* Note this moves down the html tree and gets all divs inside left div */
 
 .nav > .left > div{
-    margin-right: 20px;
-    font-size: 1em;
-
+    margin-right: 40px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
 .nav_link {
     height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    
 
 }
 
 .nav_link a{
-    color: #8a8a8a;
+    
     text-decoration: None;
     transition: color 0.5s;
-}
-
-.nav_link:hover {
-    border-bottom: 1px solid black;
+    color: #777777;
 }
 
 .nav_link a:hover {
@@ -86,7 +85,8 @@ body {
 
 .body_center {
     text-align: center;
-    font-size: xxx-large;
+    font-weight: bolder;
+    font-size: -webkit-xxx-large;
 }
 
 .welcome_text{
@@ -98,4 +98,28 @@ body {
 .slogan{
     color: red;
     padding: 300px;
+}
+
+
+/*Pigeon Page*/
+
+.pigeon_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 100px;
+    position: relative;
+    margin-right: 100px;
+}
+
+
+.pigeon{
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
 }
