@@ -20,7 +20,7 @@ body {
     
 }
 
-.container {
+.app {
     display: flex;
     flex-direction: row;
     width: 100%;

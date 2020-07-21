@@ -7,7 +7,7 @@ import '../css_files/App.css';
 class App extends Component{
    render(){
       return(
-         <div class = "container">
+         <div class = "app">
             <Navbar />
             <Main_page />
          </div>
