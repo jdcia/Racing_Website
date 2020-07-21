@@ -1,0 +1,163 @@
+
+/* 
+
+
+Legacy Code
+
+
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*Overal Styles*/
+body {
+    margin: 0px;
+
+
+    /* Note this got body to fit on the screen */
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+
+    background-image:url(../images/main_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    font-family: 'Open Sans',serif;
+    
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    
+    
+}
+
+/*Navigation Bar*/
+.nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 24px;
+
+    /* border: 1px solid black; */
+
+}
+
+.left {
+    display: flex;
+
+}
+
+/* Note this moves down the html tree and gets all divs inside left div */
+
+.nav > .left > div{
+    margin-right: 40px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    height: 22px;
+    text-decoration: None;
+    transition: color 0.5s;
+    color: #777777;
+}
+
+.nav_link:hover {
+    color:black;
+}
+
+/*Main Body*/
+
+.body_message {
+    /* padding:80px; */
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+
+
+}
+
+.body_center {
+    text-align: center;
+    font-weight: bolder;
+    font-size: -webkit-xxx-large;
+}
+
+.welcome_text{
+    color:black;
+}
+
+
+/* Fix padding to be based on screen size*/
+.slogan{
+    color: red;
+    padding: 300px;
+}
+
+
+/*Pigeon Page*/
+
+.pigeon_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.pigeon_wrapper{
+    position: relative;
+}
+
+
+.pigeon{
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.darken_pigeon{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.text_wrapper .pigeon_description{
+    transition: 1s;
+    color:transparent;
+}
+
+.text_wrapper:hover .pigeon_description{
+    color: white;
+    font-weight: 600;
+}
+
+.text_wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
