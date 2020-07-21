@@ -5,9 +5,21 @@ import Navbar from './Navbar.js';
 import '../css_files/App.css';
 
 class App extends Component{
+
+
+   constructor(){
+      super();
+      this.state = {
+         page : "nav_home"
+      };
+
+   }
+   
+
+
    render(){
       return(
-         <div class = "app">
+         <div className = "app">
             <Navbar />
             <Main_page />
          </div>

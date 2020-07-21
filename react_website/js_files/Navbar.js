@@ -3,44 +3,59 @@ import React, { Component } from 'react';
 import '../css_files/Navbar.css';
 
 class Navbar extends Component{
+    constructor(prop){
+        super(prop);
+        this.par_state = prop.state;
+    }
+
     render(){
-       return(
-         <div class="nav">
-            <div class="links">
+        
+        const links = document.querySelectorAll("nav_option");
 
-                <div class="nav_option">
-                    <div class="nav_home">
-                        Home
+        links.forEach(x => {
+            x.addEventListener('click', () => {
+                console.log("-------");
+                console.log(x.childNodes);
+            });
+        });
+
+        return(
+            <div className="nav">
+                <div className="links">
+
+                    <div className="nav_option">
+                        <div className="nav_home">
+                            <a >Home</a>
+                        </div>
+                    </div>
+
+                    <div className="nav_option">
+                        <div className="nav_pigeon">
+                            <a>Pigeon</a>
+                        </div>
+                    </div>
+
+                    <div className="nav_option">
+                        <div className="nav_method">
+                            <a>Methods</a>
+                        </div>
+                    </div>
+
+                    <div className="nav_option">
+                        <div className="nav_about">
+                            <a>About</a>
+                        </div>
+                    </div>
+
+                    <div className="nav_option">
+                        <div className="nav_contact">
+                            <a>Contact us</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="nav_option">
-                    <div class="nav_pigeon">
-                        Pigeon
-                    </div>
-                </div>
-
-                <div class="nav_option">
-                    <div class="nav_method">
-                        Methods
-                    </div>
-                </div>
-
-                <div class="nav_option">
-                    <div class="nav_about">
-                        About
-                    </div>
-                </div>
-
-                <div class="nav_option">
-                    <div class="nav_contact">
-                        Contact us
-                    </div>
-                </div>
             </div>
-
-     </div>
-       );
+        );
     }
  }
  export default Navbar; 

@@ -25,9 +25,9 @@
 /* Note this moves down the html tree and gets all divs inside left div */
 
 
-.nav:hover .nav_option{
+/* .nav:hover .nav_option{
     font-size: 2em;
-}
+} */
 
 .nav_option {
     margin-bottom: 40px;

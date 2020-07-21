@@ -5,14 +5,14 @@ import '../css_files/Main_page.css';
 class Main_page extends Component{
     render(){
        return(
-        <div class="body_message">
+        <div className="body_message">
             
 
-            <div class="body_center">
-                <div class="welcome_text">
+            <div className="body_center">
+                <div className="welcome_text">
                     Welcome To Doncia Lofts
                 </div>
-                <div class="slogan">
+                <div className="slogan">
                 </div>
             </div>
 
