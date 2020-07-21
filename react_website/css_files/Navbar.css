@@ -1,32 +1,42 @@
 /*Navigation Bar*/
 .nav {
+
     display: flex;
+
+
+
+    flex-direction: column;
 
     justify-content: space-between;
 
-    padding: 24px;
+    background-color:rgba(0, 0, 0, 0.5);
+    background-size: cover;
 
     /* border: 1px solid black; */
 
 }
 
-.left {
+.links {
     display: flex;
-
+    flex-direction: column;
+    
 }
 
 /* Note this moves down the html tree and gets all divs inside left div */
 
-.nav > .left > div{
-    margin-right: 40px;
-    font-size: 1.5em;
-    text-transform: uppercase;
+
+.nav:hover .nav_link{
+    font-size: 2em;
 }
 
 .nav_link {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    text-transform: uppercase;
     height: 22px;
     text-decoration: None;
     transition: color 0.5s;
+    transition: font-size 0.5s;
     color: #777777;
 }
 
