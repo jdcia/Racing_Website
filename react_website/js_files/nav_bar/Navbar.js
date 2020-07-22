@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Navlink from './Navlink.js';
 
 
-import '../css_files/Navbar.css';
+import '../../css_files/nav_bar/Navbar.css';
 
 class Navbar extends Component{
     constructor(prop){
         super(prop);
-        this.par_state = prop.state;
+        this.handler = prop.handler;
     }
+
 
     render(){
 
@@ -20,15 +21,15 @@ class Navbar extends Component{
                     change this body component.
                     */}
 
-                    <Navlink name="Home"/>
+                    <Navlink name="Home" handler = {this.handler}/>
 
-                    <Navlink name="Pigeons"/>
+                    <Navlink name="Pigeons" handler = {this.handler}/>
 
-                    <Navlink name="Methods"/>
+                    <Navlink name="Methods" handler = {this.handler}/>
 
-                    <Navlink name="About"/>
+                    <Navlink name="About" handler = {this.handler}/>
 
-                    <Navlink name="Contact Us"/>
+                    <Navlink name="Contact Us" handler = {this.handler}/>
 
                 </div>
 

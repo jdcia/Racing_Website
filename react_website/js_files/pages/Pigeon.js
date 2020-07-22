@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import '../css_files/Main_page.css';
+import '../../css_files/pages/Pigeon.css';
 
-class Main_page extends Component{
+class Pigeon extends Component{
     render(){
        return(
         <div className="body_message">
@@ -10,7 +10,7 @@ class Main_page extends Component{
 
             <div className="body_center">
                 <div className="welcome_text">
-                    Welcome To Doncia Lofts
+                    pigeon
                 </div>
                 <div className="slogan">
                 </div>
@@ -20,4 +20,4 @@ class Main_page extends Component{
        );
     }
  }
- export default Main_page; 
+ export default Pigeon; 
