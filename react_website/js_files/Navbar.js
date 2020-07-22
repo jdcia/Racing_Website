@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Navlink from './Navlink.js';
+
 
 import '../css_files/Navbar.css';
 
@@ -9,49 +11,25 @@ class Navbar extends Component{
     }
 
     render(){
-        
-        const links = document.querySelectorAll("nav_option");
-
-        links.forEach(x => {
-            x.addEventListener('click', () => {
-                console.log("-------");
-                console.log(x.childNodes);
-            });
-        });
 
         return(
             <div className="nav">
                 <div className="links">
 
-                    <div className="nav_option">
-                        <div className="nav_home">
-                            <a >Home</a>
-                        </div>
-                    </div>
+                    {/* Each of the following navlinks will
+                    change this body component.
+                    */}
 
-                    <div className="nav_option">
-                        <div className="nav_pigeon">
-                            <a>Pigeon</a>
-                        </div>
-                    </div>
+                    <Navlink name="Home"/>
 
-                    <div className="nav_option">
-                        <div className="nav_method">
-                            <a>Methods</a>
-                        </div>
-                    </div>
+                    <Navlink name="Pigeons"/>
 
-                    <div className="nav_option">
-                        <div className="nav_about">
-                            <a>About</a>
-                        </div>
-                    </div>
+                    <Navlink name="Methods"/>
 
-                    <div className="nav_option">
-                        <div className="nav_contact">
-                            <a>Contact us</a>
-                        </div>
-                    </div>
+                    <Navlink name="About"/>
+
+                    <Navlink name="Contact Us"/>
+
                 </div>
 
             </div>
