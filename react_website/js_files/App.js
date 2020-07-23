@@ -48,6 +48,9 @@ class App extends Component{
          <div className = "app">
             <Navbar handler={this.state_handler.bind(this)}/>
             {this.select_page()}
+            <div className="footer">
+               <div className="footer_logo"/>
+            </div>
          </div>
       );
    }
