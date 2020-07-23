@@ -23,7 +23,6 @@ class App extends Component{
       this.setState({
           page : state
       });
-      console.log("|" + this.state.page + "|");
    }
 
    select_page(){
@@ -42,6 +41,9 @@ class App extends Component{
    }
 
    render(){
+
+      document.body.classList.add('body');
+
       return(
          <div className = "app">
             <Navbar handler={this.state_handler.bind(this)}/>

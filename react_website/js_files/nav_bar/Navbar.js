@@ -33,6 +33,8 @@ class Navbar extends Component{
 
                 </div>
 
+                <div className="logo"/>
+
             </div>
         );
     }
