@@ -3,21 +3,31 @@ import React, { Component } from 'react';
 import '../../css_files/pages/Main_page.css';
 
 class Main_page extends Component{ 
+
+    
+
     constructor(prop){
         super(prop);
-        var fs = require('fs');
-        var files = fs.readdirSync('../../images');
+
+        console.log("before api");
+        fetch("http://127.0.0.1:5000/", {
+            credentials: 'same-origin'
+          })
+        .then(response => response.json())
+        .then(data => console.log(data));
+
+        this.image = 'url("../../images/backup2.jpg")';
     }
 
     render(){
         
        return(
-        <div className="body_message" style={{backgroundImage: 'url(../../images/backup2.jpg)'}}>
+        <div className="body_message" style={{backgroundImage: this.image}}>
             
 
             <div className="body_center">
             </div>
-            
+
         </div>
        );
     }
