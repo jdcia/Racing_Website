@@ -2,11 +2,10 @@
 
 .body_message {
     /* padding:80px; */
+    
     display: flex;
     flex: 1;
     flex-flow: column;
-
-    background-image:url(../../images/main_background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
