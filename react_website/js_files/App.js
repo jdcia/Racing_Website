@@ -5,6 +5,7 @@ import About from './pages/About.js';
 import ContactUs from './pages/ContactUs.js';
 import Pigeon from './pages/Pigeon.js';
 import Methods from './pages/Methods.js';
+import Footer from './footer/Footer.js';
 
 import '../css_files/App.css';
 
@@ -48,9 +49,7 @@ class App extends Component{
          <div className = "app">
             <Navbar handler={this.state_handler.bind(this)}/>
             {this.select_page()}
-            <div className="footer">
-               <div className="footer_logo"/>
-            </div>
+            <Footer />
          </div>
       );
    }
