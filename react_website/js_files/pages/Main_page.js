@@ -4,7 +4,6 @@ import '../../css_files/pages/Main_page.css';
 
 class Main_page extends Component{ 
 
-    
 
     constructor(prop){
         super(prop);
