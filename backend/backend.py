@@ -1,10 +1,13 @@
 from flask import Flask
+from flask import jsonify
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello():
-    return "../../images/backup2.jpg"
+    response = jsonify({'some': 'data'})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 if __name__ == '__main__':
     app.run()
