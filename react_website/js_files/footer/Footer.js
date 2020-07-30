@@ -8,9 +8,6 @@ class App extends Component{
 
       return(
          <div className="footer">
-               <div className="left">
-               Insert cool pitch here.
-               </div>
                <div className="footer_logo"/>
                <div className="right">
                   Contact:<br/>
