@@ -32,5 +32,10 @@ def image():
 
     return response
 
+
+
+#-----------------------------------------------------------------
+#Helper functions
+
 if __name__ == '__main__':
     app.run()
