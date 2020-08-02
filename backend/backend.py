@@ -1,7 +1,9 @@
 from flask import Flask
 from flask import jsonify
 from flask import request
+import json
 import os
+import base64
 app = Flask(__name__)
 
 
@@ -11,24 +13,19 @@ def hello():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-@app.route('/images', methods=['GET'])
+@app.route('/pigeons', methods=['GET'])
 def image():
 
-    image = os.listdir("../react_website/images")
+    images = os.listdir("./data")
 
-    cur_image = int(request.args.get('image_num'))
-    print(len(image))
-    if(cur_image == len(image) - 1):
-        next_image = 0
-    else:
-        next_image = cur_image + 1
+    cur_image = int(request.args.get('data_num'))
+    print(len(images))
 
-    response = jsonify(
-        {
-            'image' : image[cur_image],
-            'next' : next_image
-        }
-    )
+    data = get_data("./data/" + images[cur_image])
+
+    data["total_images"] = len(images)
+
+    response = json.dumps(data)
 
     return response
 
@@ -36,6 +33,31 @@ def image():
 
 #-----------------------------------------------------------------
 #Helper functions
+
+def get_data(dir_name):
+
+    result = {}
+    
+    files = os.listdir(dir_name)
+
+    print(files)
+
+    image = open(dir_name + "/" + files[1], "rb")
+
+    print(image.name)
+
+    result["image"] = base64.b64encode(image.read()).decode("utf-8")
+
+    #print(result["image"])
+
+    fil = open(dir_name + "/" + files[0], "r")
+
+    for i in fil.readlines():
+        temp = i.split(" ")
+        result[temp[0]] = temp[1].strip("\n")
+
+    
+    return result
 
 if __name__ == '__main__':
     app.run()

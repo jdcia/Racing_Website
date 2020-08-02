@@ -1,0 +1,5 @@
+gender male
+mother name
+father name
+family name
+age 5
