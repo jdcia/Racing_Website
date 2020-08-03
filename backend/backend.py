@@ -25,7 +25,8 @@ def image():
 
     data["total_images"] = len(images)
 
-    response = json.dumps(data)
+    response = jsonify(data)
+    response.headers.add('Access-Control-Allow-Origin', '*') 
 
     return response
 
