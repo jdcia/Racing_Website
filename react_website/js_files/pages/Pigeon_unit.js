@@ -51,9 +51,7 @@ class Pigeon_unit extends Component{
        return(
         <div className="unit">
 
-            {console.log(this.state.image)}
-
-            <img src={this.state.image} className="image"/>
+            <img src={`data:image/png;base64,${this.state.image}`} className="image"/>
 
 
             <div className="stats">
