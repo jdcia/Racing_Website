@@ -11,7 +11,6 @@ class Pigeon extends Component{
         super();
 
         this.state = {
-            cur : 1,
             rows : []
         };
     }

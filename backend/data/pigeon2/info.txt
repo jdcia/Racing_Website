@@ -1,3 +1,4 @@
+name bird
 gender male
 mother name
 father name
