@@ -13,17 +13,30 @@ def hello():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@app.route('/size')
+def size():
+
+    images = os.listdir("./data")
+
+    data = {}
+
+
+    data["total_images"] = len(images)
+
+    response = jsonify(data)
+    response.headers.add('Access-Control-Allow-Origin', '*') 
+
+    return response
+
 @app.route('/pigeons', methods=['GET'])
 def image():
 
     images = os.listdir("./data")
 
     cur_image = int(request.args.get('data_num'))
-    print(len(images))
 
     data = get_data("./data/" + images[cur_image])
 
-    data["total_images"] = len(images)
 
     response = jsonify(data)
     response.headers.add('Access-Control-Allow-Origin', '*') 
