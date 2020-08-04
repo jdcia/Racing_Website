@@ -3,3 +3,16 @@
 This page will show all of the pigeons in the loft.
 
 */
+
+.pigeon_page{
+    display: flex;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.pigeons_container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

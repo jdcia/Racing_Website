@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import regeneratorRuntime from "regenerator-runtime";
 
 
-import '../../css_files/pages/Pigeon.css';
+import '../../css_files/pages/Pigeon_unit.css';
 
 class Pigeon_unit extends Component{
 
@@ -33,8 +33,6 @@ class Pigeon_unit extends Component{
 
         var data = await fetch(url).then(resp => resp.json());
 
-        console.log(data);
-
         this.setState({
             image : data.image,
             name : data.name,
@@ -53,38 +51,24 @@ class Pigeon_unit extends Component{
        return(
         <div className="unit">
 
+            {console.log(this.state.image)}
 
-            <div src={this.state.image} className="image"/>
+            <img src={this.state.image} className="image"/>
 
-            <div className="info">
 
-                <div className="name">
-                    {this.state.name}
-                </div>
+            <div className="stats">
+                Name: {this.state.name} <br/>
+                Age: {this.state.age} <br/>
+                Gender: {this.state.gender} <br/>
+            </div>
 
-                <div className="age">
-                    {this.state.age}
-                </div>
-
-                <div className="family">
-                    {this.state.family}
-                </div>
-
-                <div className="gender">
-                    {this.state.gender}
-                </div>
-
-                <div className="father">
-                    {this.state.father}
-                </div>
-
-                <div className="mother">
-                    {this.state.mother}
-                </div>
+            <div className="family">
+                Family: {this.state.family} <br/>
+                Father: {this.state.father} <br/>
+                Mother: {this.state.mother} <br/>
+            </div>
 
                 
-
-            </div>
 
 
         </div>
