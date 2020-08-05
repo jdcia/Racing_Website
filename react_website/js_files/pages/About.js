@@ -8,12 +8,10 @@ class About extends Component{
         <div className="body_message">
             
 
-            <div className="body_center">
-                <div className="welcome_text">
-                    About
-                </div>
-                <div className="slogan">
-                </div>
+            <img className="image"/>
+
+            <div className="About">
+                Add story.
             </div>
 
         </div>

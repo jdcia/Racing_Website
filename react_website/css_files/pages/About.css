@@ -9,19 +9,12 @@
 
 }
 
-.body_center {
-    text-align: center;
-    font-weight: bolder;
-    font-size: -webkit-xxx-large;
+.image {
+    height: 25%;
+    /* insert image */
 }
 
-.welcome_text{
-    color:black;
+.about{
+    height: 75%;
 }
 
-
-/* Fix padding to be based on screen size*/
-.slogan{
-    color: red;
-    padding: 300px;
-}
