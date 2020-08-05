@@ -7,13 +7,20 @@ class Methods extends Component{
        return(
         <div className="body_message">
             
+            <div className="Method">
+                Insert Method Information
+            </div>
 
-            <div className="body_center">
-                <div className="welcome_text">
-                    Methods
-                </div>
-                <div className="slogan">
-                </div>
+            <div className="Method">
+                Insert Method Information
+            </div>
+
+            <div className="Method">
+                Insert Method Information
+            </div>
+
+            <div className="Method">
+                Insert Method Information
             </div>
 
         </div>

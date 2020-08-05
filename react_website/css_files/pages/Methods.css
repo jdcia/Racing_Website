@@ -9,19 +9,6 @@
 
 }
 
-.body_center {
-    text-align: center;
-    font-weight: bolder;
-    font-size: -webkit-xxx-large;
-}
-
-.welcome_text{
-    color:black;
-}
-
-
-/* Fix padding to be based on screen size*/
-.slogan{
-    color: red;
-    padding: 300px;
+.Method{
+    height: 25%;
 }

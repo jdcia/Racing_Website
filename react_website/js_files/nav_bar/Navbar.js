@@ -29,8 +29,6 @@ class Navbar extends Component{
 
                     <Navlink name="About" handler = {this.handler}/>
 
-                    <Navlink name="Contact Us" handler = {this.handler}/>
-
                 </div>
 
                 <div className="logo"/>

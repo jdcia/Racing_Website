@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Main_page from './pages/Main_page.js';
 import Navbar from './nav_bar/Navbar.js';
 import About from './pages/About.js';
-import ContactUs from './pages/ContactUs.js';
 import Pigeon from './pages/Pigeon.js';
 import Methods from './pages/Methods.js';
 import Footer from './footer/Footer.js';
